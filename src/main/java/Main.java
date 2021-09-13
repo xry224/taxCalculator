@@ -38,12 +38,11 @@ public class Main {
     public static void individualTaxCal(double monthSalary, double extraDeduction) {
         double baseTax = taxInfo.callBaseTax(monthSalary);
         System.out.println("五险一金：" + baseTax);
-        baseTax = 5591;
         double taxSum = 0;
         for (int i = 1; i <= 12; ++i) {
             double deduct = (baseTax + 5000 + extraDeduction);
             double currentSum = (monthSalary - deduct) * i;
-
+                
             double tax = taxInfo.calTax(currentSum) - taxSum;
             taxSum += tax;
             System.out.format("第%d月交税：%f，到手%f\n", i, tax, monthSalary - tax - baseTax);
