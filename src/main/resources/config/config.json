@@ -1,0 +1,96 @@
+{
+  "baseTax": {
+    "housingFund": 7,
+    "oldInsurance": 8,
+    "medicalInsurance": 2,
+    "jobInsurance": 0.5
+  },
+  "individualTaxRate": {
+    "rank1": {
+      "moreThan": 0,
+      "lessThan": 36000,
+      "percent": 3,
+      "deduction": 0
+    },
+    "rank2": {
+      "moreThan": 36000,
+      "lessThan": 144000,
+      "percent": 10,
+      "deduction": 2520
+    },
+    "rank3": {
+      "moreThan": 144000,
+      "lessThan": 300000,
+      "percent": 20,
+      "deduction": 16920
+    },
+    "rank4": {
+      "moreThan": 300000,
+      "lessThan": 420000,
+      "percent": 25,
+      "deduction": 31920
+    },
+    "rank5": {
+      "moreThan": 420000,
+      "lessThan": 660000,
+      "percent": 30,
+      "deduction": 52920
+    },
+    "rank6": {
+      "moreThan": 660000,
+      "lessThan": 960000,
+      "percent": 35,
+      "deduction": 85920
+    },
+    "rank7": {
+      "moreThan": 960000,
+      "lessThan": -1,
+      "percent": 45,
+      "deduction": 181920
+    }
+  },
+  "yearBonusTax": {
+    "rank1": {
+      "moreThan": 0,
+      "lessThan": 3000,
+      "percent": 3,
+      "deduction": 0
+    },
+    "rank2": {
+      "moreThan": 3000,
+      "lessThan": 12000,
+      "percent": 10,
+      "deduction": 210
+    },
+    "rank3": {
+      "moreThan": 12000,
+      "lessThan": 25000,
+      "percent": 20,
+      "deduction": 1410
+    },
+    "rank4": {
+      "moreThan": 25000,
+      "lessThan": 35000,
+      "percent": 25,
+      "deduction": 2660
+    },
+    "rank5": {
+      "moreThan": 35000,
+      "lessThan": 55000,
+      "percent": 30,
+      "deduction": 4410
+    },
+    "rank6": {
+      "moreThan": 55000,
+      "lessThan": 80000,
+      "percent": 35,
+      "deduction": 7160
+    },
+    "rank7": {
+      "moreThan": 80000,
+      "lessThan": -1,
+      "percent": 45,
+      "deduction": 15160
+    }
+  }
+}
