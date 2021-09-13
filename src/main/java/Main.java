@@ -44,7 +44,7 @@ public class Main {
             double deduct = (baseTax + 5000 + extraDeduction);
             double currentSum = (monthSalary - deduct) * i;
 
-            double tax = taxInfo.calTax(currentSum);
+            double tax = taxInfo.calTax(currentSum) - taxSum;
             taxSum += tax;
             System.out.format("第%d月交税：%f，到手%f\n", i, tax, monthSalary - tax - baseTax);
         }
